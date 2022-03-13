@@ -1,0 +1,175 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    /* height: 40vmin;
+    pointer-events: none; */
+    transform: rotate(360deg);
+    background-color: #4576d8;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        /* animation: App-logo-spin infinite 20s linear; */
+        transform: rotate(-180deg);
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contain {
+    background-color: wheat;
+
+    background-image: linear-gradient(
+            to bottom right,
+            wheat,
+            white,
+            gold,
+            yellow
+    );
+}
+
+.career {
+    filter: blur(5px);
+    background-color: rgb(45, 226, 13);
+    width: 4vmax;
+    height: 8vmin;
+    animation-name: example1;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    transition: 5s all;
+    position: relative;
+    top: 40vmin;
+    left: 60vmin;
+    border-radius: 120px;
+}
+
+@keyframes example1 {
+    7.14% {
+        left: 50vmin;
+        top: 15rem;
+        background-color: rgb(245, 150, 150);
+    }
+
+    14.28% {
+        left: 42vmin;
+        top: 6rem;
+        background-color: rgb(61, 209, 209);
+    }
+    21.42% {
+        left: 52vmin;
+        top: 3.5rem;
+        background-color: rgb(161, 161, 253);
+    }
+    28.56% {
+        left: 70vmin;
+        top: 22rem;
+        background-color: rgb(191, 243, 138);
+    }
+    35.7% {
+        left: 85vmin;
+        top: 3.5rem;
+        background-color: rgb(27, 228, 228);
+    }
+    42.84% {
+        left: 100vmin;
+        top: 22rem;
+        background-color: cornsilk;
+    }
+    49.98% {
+        left: 110vmin;
+        top: 3.5rem;
+        background-color: bisque;
+    }
+    57.12% {
+        left: 117vmin;
+        top: 5rem;
+        background-color: chocolate;
+    }
+    64.26% {
+        left: 42vmin;
+        top: 18rem;
+        background-color: burlywood;
+    }
+    71.40% {
+        left: 50vmin;
+        top: 22rem;
+        background-color: #61dafb;
+    }
+    78.54% {
+        left: 100vmin;
+        top: 3.5rem;
+        background-color: chartreuse;
+    }
+
+    85.68% {
+        left: 117vmin;
+        top: 12rem;
+        background-color: brown;
+    }
+    92.82% {
+        left: 100vmin;
+        top: 22rem;
+        background-color: darkgray;
+    }
+    100% {
+        left: 50vmin;
+        top: 10rem;
+        background-color: hotpink;
+    }
+}
+
+.heading {
+    font-weight: 900;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 1rem;
+
+    background-image: url("https://images.pexels.com/photos/1124960/pexels-photo-1124960.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-or {
+    font-weight: 900;
+    text-align: center;
+    line-height: 2;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxoBXjTFhrEUABXUBHBCbIZvtc9pggeiJzXQ&usqp=CAU");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.form-control {
+    border: none;
+    background-color: #4576d8;
+}
