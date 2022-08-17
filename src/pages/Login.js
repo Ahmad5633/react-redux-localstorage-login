@@ -1,4 +1,3 @@
-import Home from "./Home";
 import { setUserData } from "../redux/app/index";
 import { useDispatch } from "react-redux";
 
@@ -11,11 +10,8 @@ function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const userRef = useRef("");
-  const errRef = useRef("");
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
-  const [errMsg, setErrMsg] = useState("");
-  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     const session = localStorage.getItem("isLoggedIn");
@@ -24,9 +20,6 @@ function Login() {
     }
     userRef.current.focus();
   }, []);
-  useEffect(() => {
-    setErrMsg("");
-  }, [user, pwd]);
 
   const submitHandler = async (e) => {
     e.preventDefault();

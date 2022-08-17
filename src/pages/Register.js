@@ -1,14 +1,13 @@
 import { setUserData } from "../redux/app/index";
 import { useDispatch } from "react-redux";
-import { GoogleLogin, GoogleLogout } from "react-google-login";
-import React, { useEffect, useRef, useState } from "react";
+import { GoogleLogin } from "react-google-login";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const userRef = useRef("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [pwd, setPwd] = useState("");

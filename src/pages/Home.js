@@ -26,10 +26,7 @@ function Home() {
   return (
     <div className="container">
       <nav className="fixed-top navbar navbar-expand-lg navbar-light bg-transparent  ">
-        <a className="navbar-brand  col-2" href="#">
-          {" "}
-          Project{" "}
-        </a>
+        Project
         <button
           className="navbar-toggler"
           type="button"
@@ -51,14 +48,12 @@ function Home() {
             {session ? (
               <li className="nav-item ">
                 <Link className="nav-link h6 " to="/">
-                  {" "}
-                  <strong> {userData.data.name} </strong>
+                  <strong> {userData.name} </strong>
                 </Link>
               </li>
             ) : (
               <li className="nav-item ">
                 <Link className="nav-link h6 " to="/register">
-                  {" "}
                   <strong> Register </strong>
                 </Link>
               </li>
@@ -73,7 +68,6 @@ function Home() {
             ) : (
               <li className="nav-item ">
                 <Link className="nav-link h6 " to="/login">
-                  {" "}
                   <strong> Login </strong>
                 </Link>
               </li>
@@ -94,8 +88,8 @@ function Home() {
                   <th>Email</th>
                 </tr>
                 <tr>
-                  <td>{userData.data.name}</td>
-                  <td>{userData.data.email}</td>
+                  <td>{userData.name}</td>
+                  <td>{userData.email}</td>
                 </tr>
               </table>
             </div>
